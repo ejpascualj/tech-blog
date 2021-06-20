@@ -11,9 +11,23 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
+    },
+    content: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    created_date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: sequelize.fn('NOW'),
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {model: 'user', key: 'id'},
     },
   },
   {
