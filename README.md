@@ -9,7 +9,7 @@ CMS-style blog site similar to a Wordpress site, where developers can publish th
 * Deployed Application: https://tech-blog-ejpascualj.herokuapp.com/
 
 ## Walkthrough Demo
-![Workout Tracker app demo](./assets/demo.gif)
+![Workout Tracker app demo](./demo.gif)
 
 ## Installation and Deployment
 To install the necessary packages, open the terminal and run `npm install`. To deploy application locally, run `npm start` on the terminal.
